@@ -1,11 +1,16 @@
 import React from 'react';
 import {View, StyleSheet, Text, TextInput, TouchableOpacity} from 'react-native';
+import ProfilPhoto from '../Components/ProfilPhoto';
 
 const Signup = () => {
     return (
         <View style={{flex:1}}>
             <View style={{flex:0.5}}>
-
+               
+                   
+                   <ProfilPhoto/>
+                
+                 
             </View>
             <View style={{flex:1,marginHorizontal:15}}>
                  <View style={{flexDirection:"row",alignItems:"center",borderBottomWidth:1,borderColor:"lightgray",marginVertical:10}}>

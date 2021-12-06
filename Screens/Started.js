@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet, Text, Image, TouchableOpacity} from 'react-native';
 
-const Started = () => {
+const Started = ({navigation}) => {
     return (
         <View >
             <Image style={{height:400}} source={require("../assets/start.png")}/>
@@ -11,12 +11,12 @@ const Started = () => {
             </View>
             <View style={{flexDirection:"row",justifyContent:"space-between",marginHorizontal:25,marginTop:150}}>
                 <View>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={()=>navigation.navigate("SignUp")}>
                      <Text style={{borderBottomWidth:2,borderColor:"red"}}>REGISTER</Text>
                     </TouchableOpacity>
                 </View>
                 <View>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate("SignIn")}>
                 <Text style={{borderBottomWidth:2,borderColor:"red"}}>SIGN IN</Text>
                         </TouchableOpacity>
                 </View>

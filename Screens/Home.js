@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Text, Image, TouchableOpacity } from "react-native";
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <View style={{ alignItems: "center",backgroundColor:"#eee",flex:1 }}>
       <View >
@@ -20,7 +20,7 @@ const Home = () => {
         <Text style={{fontSize:20,marginLeft:10}}>CONTACTS</Text>
       </View>
       <View style={{ marginTop:200}}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={()=>navigation.navigate("Start")}>
           <Text style={{borderBottomWidth:2,borderColor:"red",fontWeight:"bold"}}>GET STARTED</Text>
           </TouchableOpacity>
         
